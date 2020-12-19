@@ -26,7 +26,7 @@ jobs:
         #okteto的api密钥
         okteto namespace ${{ secrets.namespace }}
         #Namespace用户名
-        cd /home/runner/work/okteto-reboot/okteto-reboot
+        cd /home/runner/work/okteto-v2-test/okteto-v2-test
         ls
         # push y
         echo y | okteto push
