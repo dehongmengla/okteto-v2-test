@@ -1,7 +1,7 @@
 name: okteto开发
 on:
- # schedule:
-  #  - cron: 10 22 * * *
+  schedule:
+    - cron: 10 22 * * *
   watch:
     types: started
 jobs:
@@ -29,5 +29,5 @@ jobs:
         cd /home/runner/work/okteto-reboot/okteto-reboot
         ls
         # push y
-        echo y | okteto push
+        okteto push
         
